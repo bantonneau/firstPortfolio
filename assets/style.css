@@ -1,0 +1,271 @@
+:root {
+    --header-color: #9f9f9f;
+    --body-color: #FFFFFF;
+    --h1-color: #232323;
+    --p-color: #181818;
+}
+/* Defines variables for colors that can be used throughout the stylesheet. */
+
+
+body {
+    margin: 0%;
+}
+/* Removes the default margin on the body element. */
+
+h4,h2 {
+    font-family: sans-serif;
+    color: var(--h1-color);
+}
+/* Applies a sans-serif font and the h1 color variable to all h4 and h2 elements. */
+
+h1 {
+    font-size: xx-large;
+    font-family: sans-serif;
+    margin-top: 0%;
+    background-color: var(--h1-color);
+    color: transparent;
+    text-shadow: 1px 2px 1px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+}
+/* Applies a larger font size, sans-serif font, and a text shadow to the h1 element.
+Sets the h1 color variable as the background color, then makes the h1 text transparent.
+Applies a text shadow to create a white outline around the h1 text.
+Uses background-clip to apply the h1 color variable only to the text itself, not the background. */
+
+#nav-bar {
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+}
+
+#nav-buttons-container a {
+    text-decoration: none;
+}
+
+
+#nav-buttons-container {
+    display: flex;
+}
+
+.navbutton {
+    margin: 20px;
+}
+/* Styles the navigation bar element to have a background color and display as a flex container.
+Aligns the content within the navigation bar to space between each element and applies padding.
+Removes text decoration from all links in the navigation bar.
+Styles the navigation button container to display as a flex container.
+Applies margin to all elements with the class "navbutton".
+css */
+
+.hero {
+    background-color: #e1e1e1;
+    padding: 150px;
+    /* background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(159,159,159,1) 100%); 
+    padding: 75px; */
+}
+/* Styles the hero section of the webpage with a background color and padding. */
+
+
+#content-container {
+    margin-inline: 0.9vw;
+}
+
+.body-container {
+    display: flex;
+    margin: 1vw 2vw 0.2vw 2vw;
+    justify-content: space-between;
+}
+
+.aside-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    flex-shrink: 0;
+    margin-right: 0.5vw;
+}
+/* Styles the content container with a horizontal margin.
+Styles the body container as a flex container with vertical margins and even horizontal space between elements.
+Styles the aside container as a flex container that aligns elements to the right with a set width and no ability to shrink. */
+
+.rectangle {
+    width: 7px;
+    background-color: #9f9f9f;
+    border-radius: 2.5px;
+    box-shadow: inset 1px 2px 1.5px rgba(0,0,0,0.9);
+    margin-left: 20px;
+}
+/* The .rectangle class refers to a small vertical rectangle element used for styling purposes.
+It has a width of 7 pixels and a height that is determined by the height of its parent element.
+It has a gray background color (#9f9f9f).
+It has a border radius of 2.5 pixels, giving it rounded corners.
+It has a box shadow applied to the top and bottom of the rectangle, creating a subtle 3D effect.
+It is positioned to the left of its parent element with a left margin of 20 pixels. */
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-inline: 1vw;
+}
+/* The .content class refers to the container element for the main content section of the website.
+It is a flex container with its child elements arranged in a row by default.
+It has the flex-wrap property set to wrap, which allows its child elements to wrap to a new line if there is not enough space for them.
+It has the justify-content property set to space-evenly, which distributes the child elements evenly along the main axis with equal spacing between them.
+It has a width of 100% to fill the available horizontal space within its parent element.
+It has a horizontal margin of 1vw on both sides, providing some spacing between the content and the edge of the screen. */
+
+
+#portrait-img {
+    width: 13vw;
+    height: 18vw;
+    margin-inline: 1vw;
+    background-size: cover;
+    max-height: 251.94px;
+    max-width: 348.84px;
+}
+/* The #portrait-img ID refers to the image of the website owner in the main content section.
+It has a width of 13% of the viewport width (vw units), and a height of 18% of the viewport width.
+It has a horizontal margin of 1vw on both sides, providing some spacing between the image and other content.
+The background-size property is set to cover, which scales the image to cover the entire element while maintaining its aspect ratio.
+It has maximum height and width limits of 251.94 pixels and 348.84 pixels, respectively. If the image is larger than these dimensions, it will be scaled down to fit within these limits. */
+
+ #about-me-content {
+    flex-wrap: nowrap;
+    align-items: center;
+}
+/* The #about-me-content ID refers to the container element for the "About Me" section of the website.
+It has the flex-wrap property set to nowrap, which prevents its child elements from wrapping to a new line if there is not enough space for them.
+It has the align-items property set to center, which centers its child elements along the cross axis. */
+
+.work-tile {
+    height: 30vw;
+    width: 30vw;
+    display: flex;
+    margin-bottom: 1vw;
+    flex: 0 1 auto;
+    border: var(--header-color);
+    border-style: solid;
+    border-width: 5px;
+    overflow: hidden;
+    justify-content: center;
+    background-size: cover;
+ }
+ /* A class that defines the style for a container element that holds an image. It has a fixed height and width of 30vw, and uses flexbox to center its content. It has a solid border with a color defined by a CSS variable, and its overflow is hidden. */
+
+ #my-div {
+    background-color: #f00;
+    width: 200px;
+    height: 200px;
+}
+/* An id that defines the style for a container element with a red background color and fixed height and width of 200px. */
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+/* A class that defines the style for a link that fills its parent container element. It has a display block property and a height and width of 100%. */
+
+.tile-titles {
+    background-color: var(--header-color);
+    width: fit-content;
+    height: fit-content;
+    padding-inline: 0.5vw;
+}
+/* A class that defines the style for a container element that holds a title. It has a background color defined by a CSS variable, and its width and height adjust to fit its content */
+
+ .work-tile:first-child {
+    background-image: url(./images/tictactoe.jpeg);
+    width: 60vw;
+    margin-inline: 1vw;
+ }
+ /* A class that defines the style for the first container element with a background image. It has a width of 60vw and a margin of 1vw.
+  */
+
+ .work-tile:nth-child(2) {
+    background-image: url(./images/etchasketch.jpeg);
+ }
+
+ .work-tile:nth-child(3) {
+    background-image: url(./images/rps.jpeg);
+ }
+
+ .work-tile:nth-child(4) {
+    background-image: url(./images/dummy_1000x1000_ffffff_cccccc.png);
+ }
+
+ .work-tile:nth-child(5) {
+    background-image: url(./images/dummy_1000x1000_ffffff_cccccc.png);
+ }
+/* Classes that define the style for the 2nd to 5th container elements with background images. */
+
+ .work-tile:first-child img {
+    width: 70vw;
+ }
+ /* A selector that defines the style for the image inside the first container element. It has a width of 70vw. */
+ .work-tile img {
+    height: auto;
+    background-size: cover;
+ }
+ /* A selector that defines the style for the images inside the other container elements. It has a height and background size set to cover. */
+ .contact-info {
+    color: var(--header-color);
+    font-family: sans-serif;
+    font-size: larger;
+    font-weight: 900;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #181818;
+ }
+ /* A class that defines the style for a text element with a color defined by a CSS variable, and a font family, size, and weight. */
+ .tile-titles h3,p{
+    font-family: sans-serif;
+    margin: 0px 0px 5px 0px;
+ }
+ /* Selectors that define the style for heading and paragraph elements inside the .tile-titles container. */
+@media screen and (max-width: 700px) {
+    /* A media query that applies a different set of styles for screens with a maximum width of 700px. It adjusts the style of the navigation bar, the buttons inside it, the margins and alignment of various elements, and hides a specific class. */
+    #nav-bar {
+        background-color: var(--header-color);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px 10px 40px;
+    }
+
+    #nav-bar h2 {
+        justify-content: space-around;
+    }
+
+    #nav-buttons-container {
+        flex-direction: column;
+    }
+
+    h4 {
+        margin: 1vw;
+    }
+
+    .navbutton {
+        margin: 0%;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .body-container {
+        flex-direction: column;
+    }
+
+    .aside-container {
+        justify-content: start;
+    }
+
+    .content a {
+        margin: 1vw;
+    }
+
+}
