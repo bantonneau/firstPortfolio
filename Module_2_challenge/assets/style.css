@@ -1,0 +1,223 @@
+:root {
+    --header-color: #9f9f9f;
+    --body-color: #FFFFFF;
+    --h1-color: #232323;
+    --p-color: #181818;
+}
+
+body {
+    margin: 0%;
+}
+
+h4,h2 {
+    font-family: sans-serif;
+    color: var(--h1-color);
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: sans-serif;
+    margin-top: 0%;
+    background-color: var(--h1-color);
+    color: transparent;
+    text-shadow: 1px 2px 1px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+}
+
+#nav-bar {
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+}
+
+#nav-buttons-container a {
+    text-decoration: none;
+}
+
+#nav-buttons-container {
+    display: flex;
+}
+
+.navbutton {
+    margin: 20px;
+}
+
+.hero {
+    background-color: #e1e1e1;
+    padding: 150px;
+    /* background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(159,159,159,1) 100%); 
+    padding: 75px; */
+}
+
+#content-container {
+    margin-inline: 0.9vw;
+}
+
+.body-container {
+    display: flex;
+    margin: 1vw 2vw 0.2vw 2vw;
+    justify-content: space-between;
+}
+
+.aside-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    flex-shrink: 0;
+    margin-right: 0.5vw;
+}
+
+.rectangle {
+    width: 7px;
+    background-color: #9f9f9f;
+    border-radius: 2.5px;
+    box-shadow: inset 1px 2px 1.5px rgba(0,0,0,0.9);
+    margin-left: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-inline: 1vw;
+}
+
+#portrait-img {
+    width: 13vw;
+    height: 18vw;
+    margin-inline: 1vw;
+    background-size: cover;
+    max-height: 251.94px;
+    max-width: 348.84px;
+}
+
+ #about-me-content {
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.work-tile {
+    height: 30vw;
+    width: 30vw;
+    display: flex;
+    margin-bottom: 1vw;
+    flex: 0 1 auto;
+    border: var(--header-color);
+    border-style: solid;
+    border-width: 5px;
+    overflow: hidden;
+    justify-content: center;
+    background-size: cover;
+ }
+
+ #my-div {
+    background-color: #f00;
+    width: 200px;
+    height: 200px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.tile-titles {
+    background-color: var(--header-color);
+    width: fit-content;
+    height: fit-content;
+    padding-inline: 0.5vw;
+}
+
+ .work-tile:first-child {
+    background-image: url(./images/tictactoe.jpeg);
+    width: 60vw;
+    margin-inline: 1vw;
+ }
+
+ .work-tile:nth-child(2) {
+    background-image: url(./images/etchasketch.jpeg);
+ }
+
+ .work-tile:nth-child(3) {
+    background-image: url(./images/rps.jpeg);
+ }
+
+ .work-tile:nth-child(4) {
+    background-image: url(./images/dummy_1000x1000_ffffff_cccccc.png);
+ }
+
+ .work-tile:nth-child(5) {
+    background-image: url(./images/dummy_1000x1000_ffffff_cccccc.png);
+ }
+
+
+ .work-tile:first-child img {
+    width: 70vw;
+ }
+ 
+ .work-tile img {
+    height: auto;
+    background-size: cover;
+ }
+
+ .contact-info {
+    color: var(--header-color);
+    font-family: sans-serif;
+    font-size: larger;
+    font-weight: 900;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #181818;
+ }
+
+ .tile-titles h3,p{
+    font-family: sans-serif;
+    margin: 0px 0px 5px 0px;
+ }
+
+@media screen and (max-width: 700px) {
+    #nav-bar {
+        background-color: var(--header-color);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px 10px 40px;
+    }
+
+    #nav-bar h2 {
+        justify-content: space-around;
+    }
+
+    #nav-buttons-container {
+        flex-direction: column;
+    }
+
+    h4 {
+        margin: 1vw;
+    }
+
+    .navbutton {
+        margin: 0%;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .body-container {
+        flex-direction: column;
+    }
+
+    .aside-container {
+        justify-content: start;
+    }
+
+    .content a {
+        margin: 1vw;
+    }
+
+}
