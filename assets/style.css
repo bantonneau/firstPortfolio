@@ -154,6 +154,7 @@ It has the align-items property set to center, which centers its child elements 
     overflow: hidden;
     justify-content: center;
     background-size: cover;
+    text-align: center;
  }
  /* A class that defines the style for a container element that holds an image. It has a fixed height and width of 30vw, and uses flexbox to center its content. It has a solid border with a color defined by a CSS variable, and its overflow is hidden. */
 
@@ -180,28 +181,29 @@ a.fill-div {
 /* A class that defines the style for a container element that holds a title. It has a background color defined by a CSS variable, and its width and height adjust to fit its content */
 
  .work-tile:first-child {
-    background-image: url(./images/tictactoe.jpeg);
+    background-image: url(https://user-images.githubusercontent.com/109747300/233526635-1403095e-7950-48f0-84b6-e9a0c7459055.png);
     width: 60vw;
     margin-inline: 1vw;
  }
  /* A class that defines the style for the first container element with a background image. It has a width of 60vw and a margin of 1vw.
   */
-
- .work-tile:nth-child(2) {
-    background-image: url(./images/etchasketch.jpeg);
+  .work-tile:nth-child(2) {
+    background-image: url(https://user-images.githubusercontent.com/109747300/232174556-dcee9376-80cf-41cf-bf2a-7796ac182303.png);
  }
 
  .work-tile:nth-child(3) {
-    background-image: url(./images/rps.jpeg);
+    background-image: url(https://user-images.githubusercontent.com/109747300/233529464-5d8a341b-6e64-4266-89a6-aeaed52ab41e.png);
  }
 
  .work-tile:nth-child(4) {
-    background-image: url(./images/dummy_1000x1000_ffffff_cccccc.png);
+    background-image: url(https://user-images.githubusercontent.com/109747300/233529044-87b82379-8247-4d14-8dca-a07fcc3bc279.png);
  }
 
  .work-tile:nth-child(5) {
     background-image: url(./images/dummy_1000x1000_ffffff_cccccc.png);
  }
+
+
 /* Classes that define the style for the 2nd to 5th container elements with background images. */
 
  .work-tile:first-child img {
